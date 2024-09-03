@@ -1,27 +1,27 @@
-import { list } from 'postcss'
+
 import React from 'react'
-import { IoBulbOutline } from "react-icons/io5";
+import { AiOutlineBulb } from "react-icons/ai";
 
 export default function Work2() {
     const menu=[
         {
-            icon: <IoBulbOutline  size={50}/>,
+            icon: <AiOutlineBulb  size={50}/>,
             title:'Choose what to Do',
             list:'Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua.',
 
         },
-        // {
-        //     icon: <IoBulbOutline size={50} />,
-        //     title:'Find what you want',
-        //     list:'Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua.',
+        {
+            icon: <AiOutlineBulb size={50} />,
+            title:'Find what you want',
+            list:'Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua.',
 
-        // },
-        // {
-        //     icon: <IoBulbOutline  size={50}/>,
-        //     title:'Explore amazing Place',
-        //     list:'Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua.',
+        },
+        {
+            icon: <AiOutlineBulb   size={50}/>,
+            title:'Explore amazing Place',
+            list:'Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua.',
 
-        // },
+        },
 
     ]
 

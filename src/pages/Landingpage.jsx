@@ -12,9 +12,9 @@ import Footer from '../components/Footer'
 import Footer2 from '../components/Footer2'
 
 
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
+// import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
-import Props from '../components/data/Props'
+// import Props from '../components/data/Props'
 
 
 export default function Landingpage() {
