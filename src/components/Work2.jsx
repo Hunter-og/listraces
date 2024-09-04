@@ -1,47 +1,42 @@
-
-import React from 'react'
+import React from 'react';
 import { AiOutlineBulb } from "react-icons/ai";
 
 export default function Work2() {
-    const menu=[
+    const menu = [
         {
-            icon: <AiOutlineBulb  size={50}/>,
-            title:'Choose what to Do',
-            list:'Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua.',
-
+            icon: <AiOutlineBulb size={50} />,
+            title: 'Choose what to Do',
+            list: 'Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua.',
         },
         {
             icon: <AiOutlineBulb size={50} />,
-            title:'Find what you want',
-            list:'Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua.',
-
+            title: 'Find what you want',
+            list: 'Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua.',
         },
         {
-            icon: <AiOutlineBulb   size={50}/>,
-            title:'Explore amazing Place',
-            list:'Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua.',
-
+            icon: <AiOutlineBulb size={50} />,
+            title: 'Explore amazing Place',
+            list: 'Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua.',
         },
+    ];
 
-    ]
-
-  return (
-  
-    <div className='flex justify-center gap-[15px] '>
-        {
-            menu.map ((eachmenu, index)=>(
-                <div className='shadow bg-white  hover:text-white  h-[400px]  w-[350px] text-center  rounded flex items-center flex-col hover:bg-red-500 mt-[100px] pt-10' >
-                    <div className='text-center   bg-[#0000001e] rounded-[100px] p-5 hover:bg-white hover:text-red-600'>{eachmenu.icon}</div>
-                    <h1 className=' mt-10 text-lg font-semibold '>{eachmenu.title}</h1>
-                    <p className=' mt-5  '>{eachmenu.list}</p>
-                    
-                    <button className=' mt-8 border-inherit rounded border  border-black p-2 hover:bg-white hover:text-red-500'>Read More</button>
+    return (
+        <div className='flex flex-col md:flex-row justify-center gap-6 px-4 md:px-20'>
+            {menu.map((eachmenu, index) => (
+                <div
+                    key={index}
+                    className='shadow bg-white hover:text-white h-auto md:h-[400px] w-full md:w-[350px] text-center rounded-lg flex items-center flex-col hover:bg-red-500 mt-10 p-6 transition-all duration-300'
+                >
+                    <div className='text-center bg-[#0000001e] rounded-full p-5 hover:bg-white hover:text-red-600'>
+                        {eachmenu.icon}
+                    </div>
+                    <h1 className='mt-6 text-xl font-semibold'>{eachmenu.title}</h1>
+                    <p className='mt-4 text-gray-600'>{eachmenu.list}</p>
+                    <button className='mt-6 border border-black rounded p-2 hover:bg-white hover:text-red-500'>
+                        Read More
+                    </button>
                 </div>
-                
-               
-            ))
-        }
-    </div>
-  )
+            ))}
+        </div>
+    );
 }
-

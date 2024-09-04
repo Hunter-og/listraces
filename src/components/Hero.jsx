@@ -1,21 +1,26 @@
-import React from 'react'
-
+import React from 'react';
 
 export default function Hero() {
   return (
-    <div className='bgc1 relat'>
-     <div className=" ">
-      <h1 className=' text-white text-[40px] font-bold text-center '>BEST PLACE TO FIND AND EXPLORE <br /> THAT ALL YOU NEED</h1>
-        <p className=' text-white mt-10 text-lg font-semibold' >Find Best Place,Restaurant,Hotel,Real State and many more think in just One click</p>
-        </div>
-      {/* <div className=" flex items-center">
-        <p className=' bg-white py-5'>what??</p>
-      <input type="" name="" id="" placeholder='Ex: Palce,Resturent,Food,Automobile' className="bar bg-white h-[10vh] w-[100%] rounded-[5px] " />
-      
+    <div className='bgc1 relat py-20 px-4'>
+      <div className="text-center max-w-4xl mx-auto">
+        <h1 className='text-white text-[28px] md:text-[40px] font-bold'>
+          BEST PLACE TO FIND AND EXPLORE <br /> ALL THAT YOU NEED
+        </h1>
+        <p className='text-white mt-6 md:mt-10 text-base md:text-lg font-semibold'>
+          Find the best place, restaurant, hotel, real estate, and many more things with just one click.
+        </p>
+      </div>
+      {/* <div className="mt-10 flex items-center justify-center">
+        <input 
+          type="text" 
+          placeholder='Ex: Place, Restaurant, Food, Automobile' 
+          className="bar bg-white h-[50px] md:h-[60px] w-full max-w-lg rounded-md px-4 text-black"
+        />
+        <button className='bg-red-500 text-white py-2 px-4 rounded-md ml-4'>
+          Search
+        </button>
       </div> */}
-      
-    
-     </div>
-    
-  )
+    </div>
+  );
 }
